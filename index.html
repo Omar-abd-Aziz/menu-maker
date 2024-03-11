@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <link rel="stylesheet" href="./bootstrap-fils/css/bootstrap.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./js cdn/swal.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap" rel="stylesheet">
+  </head>
+
+  <body style="background-color: black; font-family: cairo;">
+
+
+    <div style="max-width: 1000px; margin: 20px auto; padding: 10px;">
+
+      <div style="display: flex; justify-content: start; max-width: 400px; margin: auto;">
+        <div class="editStoreBtnDiv" style="display: none !important; overflow: hidden; position: relative; display: flex; justify-content: center;">
+          <p class="categorieLink" style="font-size: 25px; padding: 5px 10px; display: block; background-color: goldenrod; color: black; font-weight: bold; cursor: pointer;">
+            <i class="fa-solid fa-pen-to-square editStore"></i>
+          </p>
+        </div>
+      </div>
+
+      <div style="display: flex; justify-content: center;">
+        <h1 class="theMainName" style="font-family: cairo; font-weight: bold; color: #e8e8e8;"> . </h1>
+      </div>
+
+      <div>
+
+        <div style="display: flex; justify-content: center; ">
+
+          <div style=" border-radius: 20px; overflow: hidden; width: 98%; max-width: 400px; position: relative; display: flex; justify-content: center;">
+
+            <img class="storeLogo" style="overflow: hidden; max-width: 400px; border-radius: 15px; background: whitesmoke;" src="./images/img.png" alt="">
+            <p class="categorieLink editStoreLogoDad" style="display: none; position: absolute; right: 0; top: 0; font-size: 25px; padding: 5px 10px; background-color: goldenrod; color: black; font-weight: bold; cursor: pointer;">
+              <label for="logoInput">
+                <i class="fa-solid fa-pen-to-square editStoreLogo"></i>
+              </label>
+              <input type="file" accept="image/*" style="display: none;" id="logoInput">
+            </p>
+
+          </div>
+
+
+        </div>
+
+        <br>
+
+        <div style="display: flex; justify-content: center;">
+
+          <div style="width: 98%; max-width: 400px; border-radius: 15px; background-color: #1c1c1e; color: #e8e8e8; padding: 10px;">
+
+            <div class="addressDivDad" style="display: none;">
+              <div style=" display: inline-block;">
+                <i title="العنوان" class="fa-sharp fa-solid fa-location-dot" style="width: 35px; text-align: center; font-size: 25px; color: #233245; background: #e8e8e8; border-radius: 50%; padding: 5px 5px;"></i>
+              </div>
+              <p class="address" style="margin: 10px; font-family: cairo; font-weight: bold; font-size: 23px; display: inline-block;"> الشرقية الزقازيق امام بازوكا </p>
+            </div>
+            
+            <div class="phoneDivDad" style="display: none;">
+              <div style=" display: inline-block;">
+                <i title="رقم الهاتف" class="fa-sharp fa-solid fa-phone" style="width: 35px; text-align: center; font-size: 25px; color: #233245; background: #e8e8e8; border-radius: 50%; padding: 5px 5px;"></i>
+              </div>
+              <a class="phone" href="tel:01111881968" style="text-decoration: none; color: goldenrod; margin: 10px; font-family: cairo; font-weight: bold; font-size: 23px; display: inline-block;"> 01111881968 </a>
+            </div>
+
+            <div class="websiteDivDad" style="display: none;">
+              <div style=" display: inline-block;">
+                <i title="لينك موقع" class="fa-sharp fa-solid fa-link" style=" text-align: center; font-size: 25px; color: #233245; background: #e8e8e8; border-radius: 50%; padding: 5px 3px;"></i>
+              </div>
+              <a class="website" href="https://elhalwany.store" style="color: goldenrod; margin: 10px; font-family: cairo; font-weight: bold; font-size: 23px; display: inline-block;"> https://elhalwany.store </a>
+            </div>  
+
+          </div>
+
+        </div>
+
+        <br>
+        
+
+        <div style="display: flex; justify-content: center;">
+
+          <div style="width: 98%; max-width: 400px;">
+
+            <div class="categoriesDivDad">
+
+            </div>
+
+            <div style="display: inline-block;">
+              <p class="categorieLink editCategories" style="font-size: 25px; padding: 5px 10px; display: none; background-color: goldenrod; color: black; font-weight: bold; cursor: pointer;">
+                <i class="fa-solid fa-pen-to-square"></i>
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <br>
+
+
+        <div style="display: flex; justify-content: start; max-width: 400px; margin: auto;">
+          <div class="addNewProductBtnDiv" style="display: none; width: 80%;margin: auto;border-radius: 15px;overflow: hidden; position: relative; justify-content: center; ">
+            <p class="addNewProduct" style="text-align: center; margin: 0;font-size: 25px; padding: 5px 10px; display: block; background-color: goldenrod; color: black; font-weight: bold; cursor: pointer;">
+              <!-- <i class="fa-solid fa-plus"></i> -->
+              اضافة منتج جديد
+            </p>
+          </div>
+        </div>
+
+
+        <div class="categoriesCardDad">
+
+
+        </div>
+
+
+
+        <div style="height: 80px;">
+
+        </div>
+
+
+
+      </div>
+
+    </div>
+
+
+    <p class="publishStore" style="display: none; text-align: center; margin: 0;font-size: 25px; padding: 5px 10px; background-color: goldenrod; color: black; font-weight: bold; cursor: pointer;">
+      حفظ ونشر
+    </p>
+
+
+  </body>
+
+
+  <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-storage.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-database.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/dompurify@2.4.0/dist/purify.min.js"></script>
+
+  <script src="./main.js" type="module"></script>
+  <script src="./js cdn/swal.js"></script>
+  <script src="./bootstrap-fils/js/bootstrap.js"></script>
+</html>
